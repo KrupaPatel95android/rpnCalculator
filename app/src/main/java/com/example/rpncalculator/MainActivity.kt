@@ -29,23 +29,3 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun Greeting(list1:Array<String>,result1:Double, modifier: Modifier = Modifier) {
-    Text(
-        text = "Problem 1: $list1",
-        modifier = modifier
-    )
-    Text(
-        text = "result 1: $result1",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RPNCalculatorTheme {
-        Greeting(arrayOf("1","2"),3.0)
-    }
-}
-
